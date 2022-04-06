@@ -65,7 +65,7 @@ file_train.close()
 * The results are not that important, we are mostly interested in the way you approach the problem, the metrics you will choose and the analysis
 * Feel free to include any other question that would be interesting to answer during the experiments
 * Please provide comments, not only during the analysis but also to the code
-* If you do not have time to implement a subtask, give a theoretical description of how you will approach the issue (e.g train for 10,100,200 epochs, what effect do you believe it will present and how you will prevent the network from that effect?
+* If you do not have time to implement a subtask, give a theoretical description of how you will approach the issue
 * The network is very shallow, therefore it will run fast on a CPU. In case you want to run it on a GPU, you can check [google Colab](https://colab.research.google.com/)
 * In case you need more time, feel free to contact us.
 
