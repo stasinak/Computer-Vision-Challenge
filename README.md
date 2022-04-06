@@ -1,11 +1,12 @@
 # CERTH Computer-Vision-Challenge
 
 
-This is a small CV project that needs to be implemented in Python. Below you will find a detailed description of the tasks that need to be completed. Feel free to ask any questions that might arise.
+This is a small CV project that needs to be implemented in Python (either Tensorflow or Pytorch). Below you will find a detailed description of the tasks that need to be completed. Feel free to ask any questions that might arise.
 
 ## Task Description
 
-You need to perform the task of multiclass image classification in this [MNIST](https://en.wikipedia.org/wiki/MNIST_database) dataset. We have send you the dataset through email. It is already preprocessed and ready to be used. We provide you with a (simple) architecture to implement. We are mostly interested in the methodologies and analysis rather than the results. The problem itself is quite easy and well studied. You have the freedom to decide how you will approach it as a whole (from the Exploratory Data Analysis (EDA) to the final analysis of the results). As part of the assessment is to choose the appropriate methods for data exploration, hyperparameters and metrics.
+You need to perform the task of multiclass image classification in this [MNIST](https://en.wikipedia.org/wiki/MNIST_database) dataset. The dataset is located in the dataset folder. It is already preprocessed and ready to be used. We provide you with a (simple) architecture to implement. We are mostly interested in the methodologies and analysis rather than the results. The problem itself is quite easy and well studied. You have the freedom to decide how you will approach it as a whole (from the Exploratory Data Analysis (EDA) to the final analysis of the results). As part of the assessment is to choose the appropriate methods for data exploration, hyperparameters and metrics.
+
 
 ## Implementation Instructions
 
@@ -25,9 +26,9 @@ file_train.close()
 
 * **Train the network**
   * Implement the following architecture from scratch (You can use either Pytorch or tensorflow)
-      * A single convolutional layer with a small filter size (3,3) and 32 as number of filters followed by a (2,2) max pooling layer. The filter maps are then flattened to provide features to the classifier.
-      * Between the feature extractor and the output layer, add a dense layer to interpret the features with 128 nodes.
-      * Given that the problem is a multi-class classification task, an output layer with 10 nodes is required along with a softmax activation function. 
+      * A **single convolutional layer** with a small filter size (3,3) and 32 as number of filters followed by a (2,2) **max pooling layer**. The filter maps are then **flattened** to provide features to the classifier.
+      * Between the feature extractor and the output layer, add a **dense layer** to interpret the features with 128 nodes.
+      * Given that the problem is a multi-class classification task, an output **dense layer** with 10 nodes is required along with a softmax activation function. 
       * All layers will use the ReLU activation function.
       * Use a stochastic gradient descent optimizer with a learning rate of 0.01 and a momentum of 0.9. The categorical cross-entropy loss function will be optimized, suitable for multi-class classification and monitor the classification accuracy metric
   * **If training is not taking too much time**, try to optimize your network by finetuning other hyperparameters such as batch size, learning rate, different optimizer etc. and provide the a short analysis of how you choose the best model
@@ -48,24 +49,24 @@ file_train.close()
 ## Theoretical questions
 
 * How could you change the architecture of the network to provide better results and/or face issues that may arise (overfitting, underfitting etc.) ?
-  * Optional: If time permits try some of them
+  * **Optional**: If time permits try some of them
 * Given that the dataset is quite small, what approach could you use to increase the dataset and provide a more diverse dataset for improving the results? 
-  * Optional: If time permits, implement the approach
+  * **Optional**: If time permits, implement the approach
 * What other methods can you think of in order to improve the results (not in terms of architecture). 
-  * Optional: If time permits try some of them
+  * **Optional**: If time permits try some of them
 * How would you change the network in order to be used for other tasks (for example semantic segmentation)
-* Assuming that you only have two classes (e.g dogs and cats in the dataset and the classes in the dataset are not equally distributed, but 90/10.
-  * How will you describe the dataset with a word?
+* Assuming that you only have two classes (e.g dogs and cats) in the dataset and the classes in the dataset are not equally distributed, but 90/10.
+  * How will you describe the dataset in a word?
   * Is accuracy suitable for this kind of problem?
   * Shortly describe how you will approach this kind of dataset
 
 ## General Comments
 
 * The results are not that important, we are mostly interested in the way you approach the problem, the metrics you will choose and the analysis
-* Feel free to include any other questions that would be interesting to answer during the experiments
+* Feel free to include any other question that would be interesting to answer during the experiments
 * Please provide comments, not only during the analysis but also to the code
 * If you do not have time to implement a subtask, give a theoretical description of how you will approach the issue (e.g train for 10,100,200 epochs, what effect do you believe it will present and how you will prevent the network from that effect?
-* The network is very shallow, therefore it will run fast on a CPU. In case you want to run it on a GPU, you can check google Colab
+* The network is very shallow, therefore it will run fast on a CPU. In case you want to run it on a GPU, you can check [google Colab](https://colab.research.google.com/)
 * In case you need more time, feel free to contact us.
 
 
@@ -76,3 +77,4 @@ file_train.close()
 4. Send us a link to your repository
 
 
+Good luck!!! 
