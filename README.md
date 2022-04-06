@@ -1,1 +1,1 @@
-# Computer-Vision-Challenge-
+# CERTH Computer-Vision-Challenge
