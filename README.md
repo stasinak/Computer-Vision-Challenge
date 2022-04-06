@@ -30,7 +30,7 @@ file_train.close()
       * Between the feature extractor and the output layer, add a **dense layer** to interpret the features with 128 nodes.
       * Given that the problem is a multi-class classification task, an output **dense layer** with 10 nodes is required along with a softmax activation function. 
       * All layers will use the ReLU activation function.
-      * Use a stochastic gradient descent optimizer with a learning rate of 0.01 and a momentum of 0.9. The categorical cross-entropy loss function will be optimized, suitable for multi-class classification and monitor the classification accuracy metric.
+      * Use a stochastic gradient descent optimizer with a learning rate of 0.01 and a momentum of 0.9. The sparse categorical cross-entropy loss function will be optimized, suitable for multi-class classification and monitor the classification accuracy metric.
   * **If training is not taking too much time**, try to optimize your network by finetuning other hyperparameters such as batch size, learning rate, different optimizer etc. and provide a short analysis of how you have chosen the best model.
 
   * **Otherwise, if training is too time consuming for more experiments**, train the network for default parameters with batch size 128.
