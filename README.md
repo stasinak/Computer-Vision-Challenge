@@ -35,11 +35,11 @@ file_train.close()
 
   * **Otherwise, if training is too time consuming for more experiments**, train the network for default parameters with batch size 128.
 
-    * what would have been different if you had trained your mode for a smaller batch of size (for example 16) instead of 128?  
+    * What would have been different if you had trained your mode for a smaller batch of size (for example 16) instead of 128?  
     * How would you choose the best model?
     * What is the effect of the learning rate? 
 
-  * Present a plot of the learning curve. How will you choose the “optimal” epoch for stopping the training? Consider the impact of training for more or less epochs. What do you think that would be the case?
+  * Present a plot of the learning curve. How will you choose the “optimal” epoch for stopping the training? Consider the impact of training for more or less epochs. What do you think that would have happened in each case?
 
 * **Evaluation**
   * Choose the appropriate metrics for evaluation, provide a short explanation of why you chose each metric and an analysis on the results for the best model (qualitative and quantitative)
